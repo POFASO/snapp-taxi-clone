@@ -1,0 +1,23 @@
+body {
+    direction: rtl;
+    font-family: IranSans;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    height: 96px;
+    min-height: 69px;
+    padding-right: 11.5%;
+    padding-left: 11.5%;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.navContent {
+    display: flex;
+    color: #3f3f3f;
+    align-items: center;
+    text-decoration: none;
+    margin-right: 32px;
+    font-weight: 300;
+}
