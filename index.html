@@ -1,23 +1,80 @@
 <!DOCTYPE html>
-    <header>
+    <head>
         <title>snapp</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style/normalize.css">
+        <link rel="stylesheet" href="style/class.css">
         <link rel="stylesheet" href="style/style.css">
         <link rel="stylesheet" href="style/font.css">
-    </header>
+    </head>
 
     <body>
-        <nav class="nav">
-            <a href="#" class="navContent" style="margin-right: 0;"><img src="imag/snappTextLogo.svg" alt="logo snapp"></a>
-            <a href="#" class="navContent">فرصت‌های شغلی</a>
-            <a href="#" class="navContent">بلاگ</a>
-            <a href="#" class="navContent">باشگاه رانندگان</a>
-            <a href="#" class="navContent">ثبت نام راننده اسنپ</a>
-            <a href="#" class="navContent">پنل سازمانی</a>
-            <a href="#" class="navContent">درباره ما</a>
-            <a href="#" class="navContent">تماس با ما</a>
-        </nav>
+        <header class="border-bottom">
+            <input type="checkbox" class="menu-button display-none" id="checkbox1" />
+            <label class="display-flex" for="checkbox1">
+                <img class="menu-logo" src="image/menu_black_24dp.svg" alt=""/>
+            </label>
+
+            <a href="index.html" class="snapp-logo display-flex">
+                <img src="image/snappTextLogo.svg" alt="logo">
+            </a>   
+            <nav class="font-weight-300">
+                <a href="#" class="nav-content">فرصت‌های شغلی</a>
+                <a href="#" class="nav-content">بلاگ</a>
+                <a href="#" class="nav-content">باشگاه رانندگان</a>
+                <a href="#" class="nav-content row">ثبت نام راننده اسنپ
+                    <div class="nav-content-m">(سواری، موتور و وانت)</div>
+                </a>
+                <a href="#" class="nav-content">پنل سازمانی</a>
+                <a href="#" class="nav-content">درباره ما</a>
+                <a href="#" class="nav-content">تماس با ما</a>
+
+                <div class="border-nav">
+                    <div class="border-bottom width-100"></div>
+                </div>
+
+                <div class="nav-bottom width-100">
+                    <input type="checkbox" class="nav-button-bottom-1 display-none" id="checkbox2">
+                    <label for="checkbox2" class="nav-button-bottom">
+                        <div class="nav-title-1">اپلیکیشن اسنپ</div>
+                        <i class="nav-icon-1">
+                            <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <g fill="none" fill-rule="evenodd">
+                                    <path d="M0 0h24v24H0z"></path>
+                                    <path d="M8.293 4.707a1 1 0 011.414-1.414l8 8a1 1 0 010 1.414l-8 8a1 1 0 11-1.414-1.414L15.586 12 8.293 4.707z" fill="currentColor" fill-rule="nonzero"></path>
+                                </g>  
+                            </svg>
+                        </i>
+                    </label>
+                    <div class="nav-download-application">
+                        <div class="nav-download-application-1">
+                            <a href="#" class="nav-download-link width-100">
+                                <img src="image/directdownload-icon.png" class="nav-download-image" alt="download application">
+                                <span class="nav-download-text">دانلود مستقیم</span>
+                            </a>
+                            <a href="#" class="nav-download-link width-100">
+                                <img src="image/cafebazaar.png" class="nav-download-image" alt="download application">
+                                <span class="nav-download-text">دانلود از کافه بازار</span>
+                            </a>
+                            <a href="#" class="nav-download-link width-100">
+                                <img src="image/download.svg" class="nav-download-image" alt="download application">
+                                <span class="nav-download-text">وب اپلیکیشن اسنپ (ios)</span>
+                            </a>
+                            <a href="#" class="nav-download-link width-100">
+                                <img src="image/iapps.png" class="nav-download-image" alt="download application">
+                                <span class="nav-download-text">دانلود از آی‌اپس 
+                                    <span class="nav-download-text-m"> (۲۰% تخفیف ویژه با کد snapp20)</span>
+                                </span>
+                            </a>
+                            <a href="#" class="nav-download-link width-100">
+                                <img src="image/sibapp.png" class="nav-download-image" alt="download application">
+                                <span class="nav-download-text">دانلود از سیب‌اپ</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
     </body>
 </html>

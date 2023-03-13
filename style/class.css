@@ -1,0 +1,35 @@
+.display-flex {
+    display: flex;
+}
+
+.display-none {
+    display: none;
+}
+
+.border-bottom {
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-color: rgb(229, 229, 229);
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.font-weight-300 {
+    font-weight: 300;
+}
+
+.font-weight-800 {
+    font-weight: 800;
+}
+
+.width-100 {
+    width: 100%;
+}

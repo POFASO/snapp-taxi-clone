@@ -3,21 +3,206 @@ body {
     font-family: IranSans;
 }
 
-.nav {
+header {
     display: flex;
+    position: fixed;
+    padding-right: 16px;
+    padding-left: 16px;
+    height: 64px;
+    min-height: 64px;
+    right: 0;
+    left: 0;
+    top: 0;
     align-items: center;
-    height: 96px;
-    min-height: 69px;
-    padding-right: 11.5%;
-    padding-left: 11.5%;
-    border-bottom: 1px solid #e5e5e5;
+    justify-content: space-between;
+    z-index: 100;
 }
 
-.navContent {
+nav {
     display: flex;
-    color: #3f3f3f;
-    align-items: center;
+    flex-direction: column;
+    position: fixed;
+    background-color: white;
+    top: 64px;
+    max-width: 500px;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    overflow: auto;
+    align-items: flex-start;
+    opacity: 1;
+    transform: scale(0);
+    transform-origin: 100% 0;
+    animation: nav-menu .2s forwards;
+}
+
+.nav-content {
+    margin: 16px;
     text-decoration: none;
-    margin-right: 32px;
-    font-weight: 300;
+    color: inherit;
+}
+
+.nav-content div {
+    color: rgb(0, 209, 111);
+    font-size: 14px;
+    margin-right: 5px;
+}
+
+.border-nav {
+    width: 100%;
+    /* padding-left: 16px;
+    padding-right: 16px; */
+}
+
+.nav-button-bottom {
+    cursor: pointer;
+    display: flex;
+    padding: 16px;
+    color: rgb(0, 209, 111);
+    font-size: 14px;
+    font-weight: 800;
+    list-style: none;
+    list-style-type: none;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-title-1 {
+    width: 100%;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.nav-icon-1 {
+    display: flex;
+    transform: rotate(90deg);
+    width: 24px;
+    height: 24px;
+}
+
+.nav-download-application {
+    display: none;
+    height: auto;
+    overflow: hidden;
+}
+
+.nav-download-application-1 {
+    padding: 0 16px;
+    overflow: hidden;
+}
+
+.nav-download-link {
+    display: flex;
+    margin-bottom: 16px;
+    text-decoration: none;
+    align-items: center;
+}
+
+.nav-download-image {
+    width: 24px;
+    height: 24px;
+}
+
+.nav-download-text {
+    margin-right: 16px;
+    color: #3f3f3f;
+    font-size: 17px;
+}
+
+.nav-download-text-m {
+    font-size: 12px;
+}
+
+.menu-button:checked ~ nav {
+    transform: scale(1);
+}
+
+@keyframes nav_menu {
+    to {
+        opacity: 1;
+        transform: scale(1)
+    }
+}
+
+.nav-button-bottom-1:checked ~ .nav-download-application {
+    display: flex;
+}
+
+.nav-button-bottom-1:checked ~ label .nav-icon-1 {
+    transform: rotate(-90deg);
+}
+
+.main-section-download {
+    position: relative;
+    top: 64px;
+}
+
+
+
+
+@media only screen and (min-width: 840px) {
+    .menu-logo {
+        display: none;
+    }
+
+    header {
+        padding-left: 4%;
+        padding-right: 4%;
+        height: 96px;
+    }
+
+    nav {
+        transform: scale(1);
+        flex-direction: row;
+        top: 0;
+        bottom: auto;
+        overflow: hidden;
+        align-items: normal;
+        max-width: none;
+        position: relative;
+    }
+
+    .nav-content {
+        margin: 0 16px 0 0;
+        font-size: 89%;
+        letter-spacing: -0.2px;
+    }
+
+    .nav-content-m {
+        display: none;
+    }
+
+    .border-nav {
+        display: none;
+    }
+
+    .nav-bottom {
+        display: none;
+    }
+}
+
+@media only screen and (min-width:1000px) {
+    header {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .nav-content {
+        letter-spacing: -0.1px;
+        font-size: 95%;
+        margin-right: 4%;
+    }
+}
+
+@media only screen and (min-width:1376px) {
+    header {
+        padding-left: 11.5%;
+        padding-right: 11.5%;
+    }
+
+    .nav-content {
+        margin-right: 32px;
+        letter-spacing: normal;
+        font-size: 16px;
+    }
 }
